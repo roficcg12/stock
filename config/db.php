@@ -1,5 +1,5 @@
 <?php
-//error_reporting(1);
+error_reporting(0);
 /**
  * Database Connection
  * config
@@ -18,6 +18,10 @@ if($conn->connect_error)
 {
     //if connection error occurs show the error and error code and die
     die('Connection ERROR [' . $conn->connect_errno . ']:' . $conn->connect_error );
-}else{
+}
+
+/**
+else{
     echo 'connection established';
 }
+*/
