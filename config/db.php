@@ -9,8 +9,11 @@ $user = 'root';
 $password = '';
 $dbname = 'stock';
 
-$conn = new mysqli('$host','$user','$password', '$dbname');
+//connection string
+$conn = new mysqli($host,$user,$password, $dbname);
 
+
+//check
 if($conn->connect_error)
 {
     //if connection error occurs show the error and error code and die
