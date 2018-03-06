@@ -1,16 +1,8 @@
 <?php
 error_reporting(0);
-/**
- * Database Connection
- * config
- */
-$host = 'localhost';
-$user = 'root';
-$password = '';
-$dbname = 'stock';
-
+require 'bootstrap.php';
 //connection string
-$conn = new mysqli($host,$user,$password, $dbname);
+$conn = new mysqli(DB_HOST,DB_USER,DB_USER,DB_NAME);
 
 
 //check
@@ -22,6 +14,6 @@ if($conn->connect_error)
 
 /**
 else{
-    echo 'connection established';
+echo 'connection established';
 }
-*/
+ */
