@@ -2,7 +2,7 @@
 error_reporting(0);
 require 'bootstrap.php';
 //connection string
-$conn = new mysqli(DB_HOST,DB_USER,DB_USER,DB_NAME);
+$conn = new mysqli(DB_HOST,DB_USER,DB_PASS,DB_NAME);
 
 
 //check
